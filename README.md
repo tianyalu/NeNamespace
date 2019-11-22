@@ -1,11 +1,6 @@
-//
-//  main.cpp
-//  NeNamespace
-//
-//  Created by 天涯路 on 2019/11/22.
-//  Copyright © 2019年 天涯路. All rights reserved.
-//
-
+## NeNamespace 命名空间、指针与引用
+### 一、命名空间：避免同名函数的冲突
+```c++
 #include <iostream>
 using namespace std; //命名空间：避免同名函数冲突
 
@@ -29,6 +24,17 @@ int main(int argc, const char * argv[]) {
     //调用第二个命名空间的函数
     secode_space::func();
     
+    return 0;
+}
+
+```
+### 指针与引用的区别
+![image](https://github.com/tianyalu/NeNamespace/blob/master/show/reference.png)  
+```c++
+#include <iostream>
+using namespace std; 
+
+int main(int argc, const char * argv[]) {
     int i = 17;
     double d = 19.0;
     int* p = &i; //指针
@@ -40,3 +46,4 @@ int main(int argc, const char * argv[]) {
     
     return 0;
 }
+```
